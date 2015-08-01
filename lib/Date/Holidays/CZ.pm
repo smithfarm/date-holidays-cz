@@ -150,8 +150,8 @@ Return the date list in human readable format:
 
 =head1 PREREQUISITES
 
-Uses B<Date::Calc 5.0> for all calculations. Makes use of the B<POSIX> and 
-B<Time::Local> modules from the standard Perl distribution.
+Uses L<Date::Calc> for all calculations. Makes use of the L<POSIX> and 
+L<Time::Local> modules from the standard Perl distribution.
 
 
 =head1 FUNCTIONS
