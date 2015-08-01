@@ -25,8 +25,8 @@ my $build = Module::Build->new(
     },
     meta_merge => {
         resources => {
-            homepage => 'https://metacpan.org/pod/Date::Holidays::CZ/',
             repository => 'https://github.com/smithfarm/date-holidays-cz.git',
+            bugtracker => 'https://github.com/smithfarm/date-holidays-cz/issues',
         }
     },
     add_to_cleanup     => [ 'Date-Holidays-CZ-*' ],
