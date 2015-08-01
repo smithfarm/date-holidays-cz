@@ -5,7 +5,7 @@ use warnings FATAL => 'all';
 use Module::Build 0.37;
 
 my $build = Module::Build->new(
-    module_name        => 'Date::Holidays::CZ2',
+    module_name        => 'Date::Holidays::CZ',
     dist_author        => q{Smithfarm <presnypreklad@gmail.com>},
     dist_abstract      => 'determine Czech Republic bank holidays',
     dist_version_from  => 'lib/Date/Holidays/CZ.pm',
@@ -29,7 +29,7 @@ my $build = Module::Build->new(
             repository => 'https://github.com/smithfarm/date-holidays-cz.git',
         }
     },
-    add_to_cleanup     => [ 'Date-Holidays-CZ2-*' ],
+    add_to_cleanup     => [ 'Date-Holidays-CZ-*' ],
 );
 
 $build->create_build_script;

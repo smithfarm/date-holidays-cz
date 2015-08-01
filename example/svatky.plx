@@ -8,42 +8,24 @@ use Date::Holidays::CZ qw(holidays);
 # Original script for Date::Holidays::DE by Martin Schmitt <mas at scsy dot de>
 # modified by Nathan Cutler <ncutler@suse.com>
 
-# Assign full names to the internal aliases from Date::Holidays::DE
+# Assign full names to the internal aliases from Date::Holidays::CZ
 # See the manpage for a list of all aliases.
 my %svatky_full_names = (
-		'neuj' => 'Neujahrstag',
-		'hl3k' => 'Hl. 3 Koenige',
-		'romo' => 'Rosenmontag',
-		'fadi' => 'Faschingsdienstag',
-		'asmi' => 'Aschermittwoch',
-		'grdo' => 'Gruendonnerstag',
-		'karf' => 'Karfreitag',
-		'kars' => 'Karsamstag',
-		'osts' => 'Ostersonntag',
-		'ostm' => 'Ostermontag',
-		'pfis' => 'Pfingstsonntag',
-		'pfim' => 'Pfingstmontag',
-		'himm' => 'Himmelfahrtstag',
-		'fron' => 'Fronleichnam',
-		'1mai' => 'Maifeiertag',
-		'17ju' => 'Tag der deutschen Einheit (1954-1990)',
-		'mari' => 'Mariae Himmelfahrt',
-		'frie' => 'Augsburger Friedensfest (regional)',
-		'3okt' => 'Tag der deutschen Einheit',
-		'refo' => 'Reformationstag',
-		'alhe' => 'Allerheiligen',
-		'buss' => 'Buss- und Bettag',
-		'votr' => 'Volkstrauertag',
-		'toso' => 'Totensonntag',
-		'adv1' => '1. Advent',
-		'adv2' => '2. Advent',
-		'adv3' => '3. Advent',
-		'adv4' => '4. Advent',
-		'heil' => 'Heiligabend',
-		'wei1' => '1. Weihnachtstag',
-		'wei2' => '2. Weihnachtstag',
-		'silv' => 'Silvester'
-			);
+    'obss' => 'Restoration Day of the Independent Czech State',
+    'veln' => 'Easter Sunday',
+    'velp' => 'Easter Monday', 
+    'svpr' => 'Labor Day', 
+    'dvit' => 'Liberation Day',
+    'cyme' => 'Saints Cyril and Methodius Day',
+    'mhus' => 'Jan Hus Day',
+    'wenc' => 'Feast of St. Wenceslas (Czech Statehood Day)',
+    'vzcs' => 'Independent Czechoslovak State Day',
+    'bojs' => 'Struggle for Freedom and Democracy Day',
+    'sted' => 'Christmas Eve',
+    'van1' => 'Christmas Day',
+    'van2' => 'Feast of St. Stephen',
+);
+
 # This year is $tento
 my $tento    = (localtime(time()))[5] + 1900;
 
@@ -52,7 +34,7 @@ my $pristi = $tento + 1;
 
 # Get the list of holidays for next year
 my @svatky = @{holidays( WHERE  => ['all'], 
-                         FORMAT => "%#:%d.%m.%Y (%s s since the epoch.)",
+                         FORMAT => "%#:%d.%m.%Y (%s seconds since the epoch)",
                          YEAR   => $pristi
              )};
 
@@ -63,7 +45,7 @@ foreach (@svatky){
 	# Split name and date
 	my ($name, $datum) = split /:/;
 	# Print name from $svatky_full_names along with the date
-	printf ("%-40s: %10s\n", $svatky_full_names{$name}, $datum);
+	printf ("%-46s: %10s\n", $svatky_full_names{$name}, $datum);
 }
 
 exit 0;
