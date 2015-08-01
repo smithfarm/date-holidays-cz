@@ -3,6 +3,10 @@ example/business-days-diff.plx
 example/svatky.plx
 lib/Date/Holidays/CZ.pm
 LICENSE
-MANIFEST
+MANIFEST 
+META.json
+META.yml
 README
 t/00-load.t
+META.yml
+META.json
