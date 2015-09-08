@@ -1,5 +1,5 @@
 #!/usr/bin/perl
-use 5.012000; # CPAN Testers
+use 5.010000; # CPAN Testers
 use strict;
 use warnings FATAL => 'all';
 use Module::Build 0.37;
@@ -20,7 +20,7 @@ my $build = Module::Build->new(
         'Date::Calc'         => 5.0,
     },
     requires           => {
-        'perl'               => 5.012,
+        'perl'               => 5.010,
         'Date::Calc'         => 5.0,
     },
     meta_merge => {
