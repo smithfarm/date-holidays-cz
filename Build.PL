@@ -13,7 +13,7 @@ my $build = Module::Build->new(
     create_license     => 0,
     create_readme      => 0,
     configure_requires => {
-        'Module::Build'      => 0.37,
+        'Module::Build'      => 0,
         'Software::License'  => 0,
     },
     build_requires     => { 
