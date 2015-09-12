@@ -2,7 +2,7 @@
 use 5.010000; # CPAN Testers
 use strict;
 use warnings FATAL => 'all';
-use Module::Build 0.37;
+use Module::Build;
 
 my $build = Module::Build->new(
     module_name        => 'Date::Holidays::CZ',
