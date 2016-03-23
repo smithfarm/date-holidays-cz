@@ -11,6 +11,20 @@ Revision history for Perl extension Date::Holidays::CZ
        distribution
 0.07 Removed auto-added docu-cruft from CZ.pm
 
-0.08  TBA
+0.08
 - complete rewrite based on Date::Holidays::DE
+
+0.09
+- Add release and pre-release scripts
+- Build.PL: do not auto-generate README
+- CZ.pm: POD cleanup
+- Require perl 5.010 and later, instead of 5.012
+- Build.PL: do not require a particular version of Module::Build
+- t/00-load.t: use done_testing() instead of bareword
+- t/00-load.t: support SLE_11_SP3
+
+0.10 2016-03-23
+- CZ.pm: support Good Friday
+- META.{json,yml}: add META files to git repo
+- release.sh: fix brokenness in release script
 
