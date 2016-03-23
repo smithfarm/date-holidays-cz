@@ -54,6 +54,7 @@ our $VERSION   = '0.08';
 The module knows about the following holidays (official names):
 
   obss Den obnovy samostatného českého státu
+  velk Velikonoční pátek
   veln Velikonoční neděle
   velp Velikonoční pondělí
   svpr Svátek práce
@@ -72,6 +73,7 @@ The module knows about the following holidays (official names):
 The module knows about the following holidays (English names):
 
   obss Restoration Day of the Independent Czech State
+  velk Good Friday
   veln Easter Sunday
   velp Easter Monday
   svpr Labor Day
@@ -179,6 +181,7 @@ sub holidays{
 	# Aliases for holidays
         #
         #  obss Restoration Day of the Independent Czech State
+        #  velk Good Friday
         #  veln Easter Sunday
         #  velp Easter Monday
         #  svpr Labor Day
@@ -198,7 +201,7 @@ sub holidays{
 	#
 	my %holidays;
 	# Common holidays throughout the Czech Republic
-	@{$holidays{'common'}} = qw( obss veln velp svpr dvit
+	@{$holidays{'common'}} = qw( obss velk veln velp svpr dvit
             cyme mhus wenc vzcs bojs sted van1 van2 );
 
         #
@@ -245,6 +248,11 @@ sub holidays{
 	my ($y_velp, $m_velp, $d_velp) =
 		Date::Calc::Add_Delta_Days($year, $month, $day, 1);
 	$holiday{'velp'} = _date2timestamp($y_velp, $m_velp, $d_velp);
+
+        # Good Friday = Easter Sunday minus 2 days
+        my ($y_velk, $m_velk, $d_velk) =
+            Date::Calc::Add_Delta_Days($year, $month, $day, -2);
+        $holiday{'velk'} = _date2timestamp($y_velk, $m_velk, $d_velk);
 
         #
 	# Build list for returning
