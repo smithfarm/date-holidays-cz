@@ -28,3 +28,7 @@ Revision history for Perl extension Date::Holidays::CZ
 - META.{json,yml}: add META files to git repo
 - release.sh: fix brokenness in release script
 
+0.11 2016-03-23 11:23 CET
+- Update prerelease and release scripts to latest upstream
+- prerelease.sh: adapt to two significant digits in version number
+
