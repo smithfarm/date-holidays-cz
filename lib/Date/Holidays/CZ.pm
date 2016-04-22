@@ -250,9 +250,11 @@ sub holidays{
 	$holiday{'velp'} = _date2timestamp($y_velp, $m_velp, $d_velp);
 
         # Good Friday = Easter Sunday minus 2 days
-        my ($y_velk, $m_velk, $d_velk) =
-            Date::Calc::Add_Delta_Days($year, $month, $day, -2);
-        $holiday{'velk'} = _date2timestamp($y_velk, $m_velk, $d_velk);
+        if ($year >= 2016) {
+            my ($y_velk, $m_velk, $d_velk) =
+                Date::Calc::Add_Delta_Days($year, $month, $day, -2);
+            $holiday{'velk'} = _date2timestamp($y_velk, $m_velk, $d_velk);
+        }
 
         #
 	# Build list for returning
