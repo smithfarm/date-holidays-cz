@@ -36,3 +36,6 @@ Revision history for Perl extension Date::Holidays::CZ
 - release.sh: adapt to only two significant digits in version
 - Good Friday only from 2016 on
 
+0.13 2016-04-23 11:28 CEST
+- MANIFEST: add t/basic.t
+
