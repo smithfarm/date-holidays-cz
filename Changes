@@ -32,3 +32,7 @@ Revision history for Perl extension Date::Holidays::CZ
 - Update prerelease and release scripts to latest upstream
 - prerelease.sh: adapt to two significant digits in version number
 
+0.12 2016-04-23 11:26 CEST
+- release.sh: adapt to only two significant digits in version
+- Good Friday only from 2016 on
+
