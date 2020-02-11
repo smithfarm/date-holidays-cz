@@ -75,3 +75,7 @@
 \bCPAN_NAME$
 release.sh$
 \bREADME\.md$
+
+# Avoid perlcritic, travis config files
+\B\.perlcriticrc\b
+\B\.travis.yml\b
