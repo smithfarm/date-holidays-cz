@@ -39,11 +39,11 @@ our @EXPORT_OK = qw( holidays );
 
 =head1 VERSION
 
-Version 0.15
+Version 0.16
 
 =cut
 
-our $VERSION   = '0.15';
+our $VERSION   = '0.16';
 
 
 

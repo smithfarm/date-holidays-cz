@@ -46,3 +46,6 @@ Revision history for Perl extension Date::Holidays::CZ
 0.15 2020-02-11 18:20 CET
 - Prepare for dochazka-esque prerelease.sh and release.sh
 
+0.16 2020-02-11 19:26 CET
+- README.rst: fix typo in module name
+
