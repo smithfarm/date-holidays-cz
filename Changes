@@ -43,3 +43,6 @@ Revision history for Perl extension Date::Holidays::CZ
 - Travis CI
 - Drop plain-text README, add Perl Critic and Manifest tests
 
+0.15 2020-02-11 18:20 CET
+- Prepare for dochazka-esque prerelease.sh and release.sh
+
