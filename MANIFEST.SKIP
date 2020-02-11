@@ -76,6 +76,11 @@
 release.sh$
 \bREADME\.md$
 
+# Avoid release script helper files
+\bCPAN_NAME$
+\bOBS_PROJECT$
+\bVERSION_MODULE$
+
 # Avoid perlcritic, travis config files
 \B\.perlcriticrc\b
 \B\.travis.yml\b
