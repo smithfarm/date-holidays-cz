@@ -10,7 +10,7 @@ use Exporter qw( import );
 use POSIX qw(strftime);
 use Time::Local;
 
-
+=encoding utf8
 
 =head1 NAME
 
