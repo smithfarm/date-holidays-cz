@@ -1,5 +1,6 @@
 Build.PL
 Changes
+CONTRIBUTING.rst
 example/business-days-diff.plx
 example/svatky.plx
 lib/Date/Holidays/CZ.pm
