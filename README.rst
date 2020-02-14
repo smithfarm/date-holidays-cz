@@ -32,5 +32,5 @@ Submitting patches
 ------------------
 
 Before you submit a patch, read carefully the file ``CONTRIBUTING.rst`` in the
-same directory as this ``README.rst``.  
+same directory as this ``README.rst``.
 
