@@ -146,10 +146,10 @@ To disable this behaviour, set the I<WEEKENDS> option to 0:
 Get all holidays in 2004, except those that occur on weekends.
 Return the date list in human readable format:
 
-  my $feiertage_ref = holidays( FORMAT   => "%a, %d.%m.%Y",
-                                WEEKENDS => 0,
-                                YEAR     => 2004,
-                              );
+  my $svatky_ref = holidays( FORMAT   => "%a, %d.%m.%Y",
+                             WEEKENDS => 0,
+                             YEAR     => 2004,
+                           );
 
 
 =head1 PREREQUISITES
